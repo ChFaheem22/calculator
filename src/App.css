@@ -1,0 +1,100 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  background: #f7f7f7;
+}
+
+.body {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  width: 320px;
+}
+.display-container {
+  width: 90%;
+  height: 60px;
+  font-size: 25px;
+  text-align: right;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 2px solid black;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+}
+.equation {
+  font-size: 1.8rem;
+  transition: all 0.3s ease;
+  color: #000;
+}
+
+.equation-small {
+  font-size: 1rem;
+  color: #888;
+}
+
+.answer {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #000;
+  margin-top: 5px;
+}
+
+
+.calc {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+}
+
+.butt {
+  height: 60px;
+  font-size: 19px;
+  border: none;
+  background-color: #e0e0e0;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.butt:hover {
+  background-color: #d5d5d5;
+}
+
+.res{
+  height: 60px;
+  font-size: 19px;
+  border: none;
+  background-color:#59bd5c;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+.res:hover{
+  background-color: #45a049;
+}
+
+
+@media (max-width: 768px) {
+  .body {
+    width: 300px;
+    padding: 16px;
+  }
+
+  .display {
+    font-size: 1.5rem;
+    height: 50px;
+  }
+
+  .butt {
+    height: 50px;
+    font-size: 1rem;
+  }
+
+  .calc {
+    gap: 10px;
+  }
+}
